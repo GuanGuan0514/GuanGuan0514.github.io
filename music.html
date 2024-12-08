@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>薛之谦 - 音乐经历</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff0f6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ff80a5;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: #ff5c8d;
+      }
+      main {
+        padding: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #ff80a5;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .imgg {
+        display: grid;
+        grid-template-columns: repeat(4, 25vw); /* 四列，每列宽度相等 */
+        grid-template-rows: 25vw 25vw;
+        /* row-gap: 20px; */
+        gap: 20px;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 10px 10px 2px rgb(201, 197, 197);
+        /* border-radius: 50% 50% 50% 50%; */
+        filter: grayscale(100%);
+      }
+      /* .imgg {
+        width: 80%;
+        margin: 0 auto;
+      } */
+      li {
+        position: relative;
+        box-shadow: 10px 10px 15px #9d9d9d;
+        display: inline-block;
+        width: 20vw;
+        height: 20vw;
+      }
+      #text {
+        position: absolute;
+        bottom: 0px;
+        line-height: 40px;
+        background-color: rgb(72, 71, 71);
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: white;
+        display: none;
+        /* opacity: 0.8; */
+      }
+      li:hover #text {
+        display: block;
+      }
+      li:hover img {
+        filter: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>薛之谦 - 音乐经历</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">当前</a></li>
+          <li><a href="music.html" class="active">音乐经历</a></li>
+          <li><a href="fame.html">成名之路</a></li>
+          <li><a href="life.html">个人生活</a></li>
+          <li><a href="peace.html">世界和平</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>薛之谦的音乐经历</h2>
+      <p>
+        薛之谦的音乐生涯可以说充满了挑战与坚持。从初入音乐圈，到不断努力创作，最终突破自我成为华语乐坛的明星。
+      </p>
+      <p>
+        2006年，薛之谦推出了他的第一张专辑《薛之谦》，虽未大红大紫，但他并没有放弃，反而更加努力地投入音乐创作。在接下来的几年中，他不断发布单曲，《认真的雪》《演员》《丑八怪》等作品成为了他的代表作。
+      </p>
+      <p>
+        薛之谦的音乐风格多样，除了情歌之外，他也尝试过电子、摇滚等多种音乐形式，逐渐确立了自己的音乐定位。
+      </p>
+    </main>
+    <div class="imgg">
+      <li>
+        <img src="1.png" alt="1" />
+        <div id="text">渡</div>
+      </li>
+      <li>
+        <img src="2.png" alt="1" />
+        <div id="text">天外来物</div>
+      </li>
+      <li>
+        <img src="3.png" alt="1" />
+        <div id="text">无数</div>
+      </li>
+      <li>
+        <img src="4.png" alt="1" />
+        <div id="text">尘</div>
+      </li>
+    </div>
+    <footer>
+      <p>&copy; 2024 薛之谦专题网站</p>
+    </footer>
+  </body>
+</html>

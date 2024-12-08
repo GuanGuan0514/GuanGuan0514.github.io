@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>薛之谦 - 世界和平</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff0f6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ff80a5;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: #ff5c8d;
+      }
+      main {
+        padding: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #ff80a5;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .imgg {
+        display: grid;
+        grid-template-columns: repeat(4, 25vw); /* 四列，每列宽度相等 */
+        grid-template-rows: 25vw 25vw;
+        /* row-gap: 20px; */
+        gap: 20px;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 10px 10px 2px rgb(201, 197, 197);
+        /* border-radius: 50% 50% 50% 50%; */
+        /* filter: grayscale(100%); */
+      }
+      /* .imgg {
+        width: 80%;
+        margin: 0 auto;
+      } */
+      li {
+        position: relative;
+        box-shadow: 10px 10px 15px #9d9d9d;
+        display: inline-block;
+        width: 20vw;
+        height: 20vw;
+      }
+      #text {
+        position: absolute;
+        bottom: 0px;
+        line-height: 40px;
+        background-color: rgb(72, 71, 71);
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: white;
+        display: none;
+        /* opacity: 0.8; */
+      }
+      li:hover #text {
+        display: block;
+      }
+      li:hover img {
+        filter: none;
+      }
+
+      /* 新增居中样式 */
+      .centered-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .centered-image img {
+        width: 80%; /* 调整图片宽度百分比，缩小为原来的80% */
+        height: auto; /* 保持图片的纵横比 */
+        box-shadow: 10px 10px 15px rgb(201, 197, 197); /* 保留阴影效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>薛之谦 - 世界和平</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">当前</a></li>
+          <li><a href="music.html">音乐经历</a></li>
+          <li><a href="fame.html">成名之路</a></li>
+          <li><a href="life.html">个人生活</a></li>
+          <li><a href="peace.html" class="active">世界和平</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 图片居中 -->
+    <div class="centered-image">
+      <img src="5.png" alt="世界和平" />
+    </div>
+
+    <main>
+      <h2>薛之谦对世界和平的热爱</h2>
+      <p>
+        薛之谦作为公众人物，不仅在音乐领域有所成就，同时也非常关注世界和平问题。薛之谦通过社交媒体表达了自己对世界和平的支持。
+      </p>
+      <p>
+        他在多个采访中表示，自己热爱世界和平，愿意为全球的和谐共处贡献力量。无论是在音乐创作中，还是在个人生活中，薛之谦都在践行着他对和平的追求。
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 薛之谦专题网站</p>
+    </footer>
+  </body>
+</html>
