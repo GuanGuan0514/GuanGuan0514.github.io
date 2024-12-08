@@ -46,6 +46,68 @@
         bottom: 0;
         width: 100%;
       }
+      .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0;
+      }
+      .image-container img {
+        width: 45%;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container img:hover {
+        transform: scale(1.05);
+      }
+      .video-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      .video-container video {
+        width: 60%; /* 设置为相对较小的宽度 */
+        height: 300px; /* 设置视频高度 */
+        border-radius: 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+      .video-container video:hover {
+        transform: scale(1.05);
+      }
+      .concert-info {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #ffccd9;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+      .concert-info h3 {
+        text-align: center;
+        color: #ff5c8d;
+      }
+      .concert-info p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+      .btn {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+        background-color: #ff80a5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .btn:hover {
+        background-color: #ff5c8d;
+      }
     </style>
   </head>
   <body>
@@ -73,6 +135,33 @@
       <p>
         不仅如此，他在电视节目中的幽默风趣，也让他积累了大量的粉丝，成为了公众人物。
       </p>
+
+      <!-- 图片展示 -->
+      <div class="image-container">
+        <img src="7.jpg" alt="薛之谦巡回演唱会1" />
+        <img src="8.jpg" alt="薛之谦巡回演唱会2" />
+        <img src="9.jpg" alt="薛之谦巡回演唱会2" />
+      </div>
+
+      <!-- 本地视频展示 -->
+      <div class="video-container">
+        <video controls autoplay loop>
+          <source src="xue_live_tour.mp4" type="video/mp4" />
+          您的浏览器不支持播放视频。
+        </video>
+      </div>
+
+      <!-- 薛之谦巡回演唱会信息 -->
+      <div class="concert-info">
+        <h3>薛之谦巡回演唱会</h3>
+        <p>
+          薛之谦在逐渐成为华语乐坛的顶级歌手后，开始了自己的巡回演唱会。每一场演唱会都充满了激情和感动，他不仅为粉丝带来了精彩的音乐作品，也通过与粉丝的互动建立了深厚的情感纽带。
+        </p>
+        <p>
+          他在演唱会上演绎了诸如《认真的雪》、《演员》以及其他经典歌曲，巡回演出也成为他事业的重要里程碑。通过这些演出，他的歌迷基础不断扩大，成为了音乐界的标杆人物之一。
+        </p>
+        <a href="tickets.html" class="btn">购票参演</a>
+      </div>
     </main>
 
     <footer>
